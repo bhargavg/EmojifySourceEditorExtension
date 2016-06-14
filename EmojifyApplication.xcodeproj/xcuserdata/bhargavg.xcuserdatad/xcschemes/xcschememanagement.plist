@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>EmojifyCommands.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>7C62C71D1D10A6E9007374D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C62C7311D10A706007374D4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

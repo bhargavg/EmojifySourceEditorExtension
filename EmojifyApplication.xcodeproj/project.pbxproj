@@ -10,7 +10,35 @@
 		7C62C7221D10A6E9007374D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62C7211D10A6E9007374D4 /* AppDelegate.swift */; };
 		7C62C7241D10A6E9007374D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C62C7231D10A6E9007374D4 /* Assets.xcassets */; };
 		7C62C7271D10A6E9007374D4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C62C7251D10A6E9007374D4 /* MainMenu.xib */; };
+		7C62C7351D10A706007374D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C62C7341D10A706007374D4 /* Cocoa.framework */; };
+		7C62C73A1D10A706007374D4 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62C7391D10A706007374D4 /* SourceEditorExtension.swift */; };
+		7C62C73C1D10A706007374D4 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C62C73B1D10A706007374D4 /* SourceEditorCommand.swift */; };
+		7C62C7401D10A706007374D4 /* Emojify.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7C62C7321D10A706007374D4 /* Emojify.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C62C73E1D10A706007374D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C62C7161D10A6E9007374D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C62C7311D10A706007374D4;
+			remoteInfo = EmojifyCommands;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7C62C7441D10A706007374D4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7C62C7401D10A706007374D4 /* Emojify.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7C62C71E1D10A6E9007374D4 /* EmojifyApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojifyApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,6 +46,12 @@
 		7C62C7231D10A6E9007374D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C62C7261D10A6E9007374D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		7C62C7281D10A6E9007374D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C62C7321D10A706007374D4 /* Emojify.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Emojify.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C62C7341D10A706007374D4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7C62C7381D10A706007374D4 /* EmojifyCommands.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EmojifyCommands.entitlements; sourceTree = "<group>"; };
+		7C62C7391D10A706007374D4 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		7C62C73B1D10A706007374D4 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		7C62C73D1D10A706007374D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +62,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C62C72F1D10A706007374D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C62C7351D10A706007374D4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -35,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				7C62C7201D10A6E9007374D4 /* EmojifyApplication */,
+				7C62C7361D10A706007374D4 /* EmojifyCommands */,
+				7C62C7331D10A706007374D4 /* Frameworks */,
 				7C62C71F1D10A6E9007374D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				7C62C71E1D10A6E9007374D4 /* EmojifyApplication.app */,
+				7C62C7321D10A706007374D4 /* Emojify.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +103,33 @@
 			path = EmojifyApplication;
 			sourceTree = "<group>";
 		};
+		7C62C7331D10A706007374D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C62C7341D10A706007374D4 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C62C7361D10A706007374D4 /* EmojifyCommands */ = {
+			isa = PBXGroup;
+			children = (
+				7C62C7391D10A706007374D4 /* SourceEditorExtension.swift */,
+				7C62C73B1D10A706007374D4 /* SourceEditorCommand.swift */,
+				7C62C73D1D10A706007374D4 /* Info.plist */,
+				7C62C7371D10A706007374D4 /* Supporting Files */,
+			);
+			path = EmojifyCommands;
+			sourceTree = "<group>";
+		};
+		7C62C7371D10A706007374D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C62C7381D10A706007374D4 /* EmojifyCommands.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,15 +140,34 @@
 				7C62C71A1D10A6E9007374D4 /* Sources */,
 				7C62C71B1D10A6E9007374D4 /* Frameworks */,
 				7C62C71C1D10A6E9007374D4 /* Resources */,
+				7C62C7441D10A706007374D4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7C62C73F1D10A706007374D4 /* PBXTargetDependency */,
 			);
 			name = EmojifyApplication;
 			productName = EmojifyApplication;
 			productReference = 7C62C71E1D10A6E9007374D4 /* EmojifyApplication.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7C62C7311D10A706007374D4 /* Emojify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C62C7411D10A706007374D4 /* Build configuration list for PBXNativeTarget "Emojify" */;
+			buildPhases = (
+				7C62C72E1D10A706007374D4 /* Sources */,
+				7C62C72F1D10A706007374D4 /* Frameworks */,
+				7C62C7301D10A706007374D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Emojify;
+			productName = EmojifyCommands;
+			productReference = 7C62C7321D10A706007374D4 /* Emojify.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -89,6 +180,12 @@
 				ORGANIZATIONNAME = "Bhargav Gurlanka";
 				TargetAttributes = {
 					7C62C71D1D10A6E9007374D4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = QXD5K32E7D;
+						DevelopmentTeamName = "Bhargav Gurlanka (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+					7C62C7311D10A706007374D4 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = QXD5K32E7D;
 						DevelopmentTeamName = "Bhargav Gurlanka (Personal Team)";
@@ -110,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				7C62C71D1D10A6E9007374D4 /* EmojifyApplication */,
+				7C62C7311D10A706007374D4 /* Emojify */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +222,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C62C7301D10A706007374D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,7 +240,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7C62C72E1D10A706007374D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C62C73A1D10A706007374D4 /* SourceEditorExtension.swift in Sources */,
+				7C62C73C1D10A706007374D4 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C62C73F1D10A706007374D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C62C7311D10A706007374D4 /* Emojify */;
+			targetProxy = 7C62C73E1D10A706007374D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7C62C7251D10A6E9007374D4 /* MainMenu.xib */ = {
@@ -238,7 +360,9 @@
 		7C62C72C1D10A6E9007374D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EmojifyApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -251,12 +375,46 @@
 		7C62C72D1D10A6E9007374D4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = EmojifyApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bhargavg.EmojifyApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7C62C7421D10A706007374D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EmojifyCommands/EmojifyCommands.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EmojifyCommands/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhargavg.EmojifyApplication.EmojifyCommands;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7C62C7431D10A706007374D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = EmojifyCommands/EmojifyCommands.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EmojifyCommands/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhargavg.EmojifyApplication.EmojifyCommands;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -278,6 +436,14 @@
 			buildConfigurations = (
 				7C62C72C1D10A6E9007374D4 /* Debug */,
 				7C62C72D1D10A6E9007374D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7C62C7411D10A706007374D4 /* Build configuration list for PBXNativeTarget "Emojify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C62C7421D10A706007374D4 /* Debug */,
+				7C62C7431D10A706007374D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
