@@ -2,8 +2,9 @@
 
 This is a proof-of-concept implementation of the new Xcode Source Editor Extensions
 
-![Emojify hero image](images/recording.gif)
+> Note: The extension only converts "love", "happy" and "graduation" to corresponding emojis.
 
+![Emojify hero image](images/recording.gif)
 
 ## How to use:
 
